@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:4.0
+    container_name: jwtmongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER_NAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_USER_PASSWORD}
+    volumes:
+      - ./database/:/data/db
+    ports:
+      - '27017:27017'
