@@ -1,17 +1,17 @@
 import type { NextPage } from 'next'
 import styles from '@/styles/Home.module.css'
-import DefaultLayout from '@/layouts/default';
+import MinimalLayout from '@/layouts/minimal';
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
-      <DefaultLayout title="JWT Learn">
+      <MinimalLayout title="About test">
         <div className={styles.container}>
           <main className={styles.main}>
-            Main
+            About
           </main>
         </div>
-      </DefaultLayout>
+      </MinimalLayout>
   )
 }
 
-export default Home
+export default About
